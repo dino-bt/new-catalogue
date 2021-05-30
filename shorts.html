@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leggings</title>
+    <!--Bootstrap-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!---Using Icons-->
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <!--Nova Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap"
+    />
+
+    <script src="https://kit.fontawesome.com/a9365d9272.js"></script>
+
+    <link rel="stylesheet" href="catalogue.css" />
+    <style>
+      img {
+        margin-top: 35%;
+        margin-left: 10%;
+
+        width: 500px;
+      }
+
+      img:hover {
+        transform: scale(1.2, 1.2);
+      }
+
+      p {
+        font-size: large;
+      }
+
+      #legdes {
+        margin-left: 10%;
+        margin-top: 15%;
+        border: solid white;
+      }
+
+      h2 {
+        margin-top: 10%;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapitems">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <header>
+              <div class="logo">ROXY</div>
+              <div class="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="items.html">Items</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li class="cart">
+                    <a href="cart.html">
+                      <ion-icon name="cart-outline"></ion-icon>CART
+                      <span>0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5">
+            <img
+              height="400px"
+              width="500px"
+              src="images/shorts.jpg"
+              class="img-thumbnail img-fluid"
+              alt="yogamat"
+            />
+          </div>
+
+          <div id="legdes" class="col-5">
+            <h2>Roxy High Waist Gym Shorts</h2>
+            <br />
+            <br />
+
+            <ul>
+              <li>
+                <p>
+                  Our gym shorts are made of the best material, and colors will
+                  not fade out after the wash. We have designed the shorts with
+                  a thin material allowing air circulation to flow in and out
+                  during a workout.
+                </p>
+              </li>
+              <li>R300</li>
+              <li>One year warranty</li>
+              <li>
+                <button class="add-cart" id="addcartshorts">ADD TO CART</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./catalogue.js" async></script>
+  </body>
+</html>

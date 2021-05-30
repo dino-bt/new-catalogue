@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue Homepage</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197620444-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-197620444-1');
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+    <!--Nova Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap"
+    />
+
+    <script src="https://kit.fontawesome.com/a9365d9272.js"></script>
+
+    <link rel="stylesheet" href="catalogue.css" />
+  </head>
+
+  <body>
+    <!-- adding a header with div blocks and using bootstrap grid contains header and alist -->
+    <!--Wrap items is the outer most div where we style functions mainly for background color and effects -->
+    <div class="wrapitems">
+      <header>
+        <div class="logo">ROXY</div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <!--Here is the drop down log in menu-->
+
+          <input type="checkbox" id="check" />
+          <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"> </i>
+          </label>
+
+          <div id="login_form">
+            <h1>Login</h1>
+            <br />
+            <ul id="login_list">
+              <li><input class="txt" type="text" placeholder="User name" /></li>
+              <br />
+              <li>
+                <input class="txt" type="password" placeholder="Password" />
+              </li>
+              <br />
+              <p><input type="checkbox" />Save the Password</p>
+              <br />
+              <li><input class="button" type="button" value="Login" /></li>
+            </ul>
+            <a href="#">Forgot the password </a><br />
+            <a href="#">Don't have an account</a>
+          </div>
+        </div>
+      </header>
+
+      <!--contains two div blocks one is to hold the headers and paragraphs the other contains clickable buttons  -->
+      <div class="content">
+        <h1>Always ready to change your mind</h1>
+        <br />
+        <br />
+        <p>
+          Your service is outstanding, Your products are great. Thank you ~
+          Cathryn Roberston
+        </p>
+
+        <div class="btn-group">
+          <a href="items.html" class="color1">Shop Now</a>
+          <a href="#" class="color2">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

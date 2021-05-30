@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leggings</title>
+    <!--Bootstrap-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!--Nova Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap"
+    />
+
+    <script src="https://kit.fontawesome.com/a9365d9272.js"></script>
+
+    <link rel="stylesheet" href="catalogue.css" />
+    <style>
+      /*Changing the font size and aligning the center */
+      p {
+        font-size: large;
+        text-align: center;
+      }
+
+      /* styling the links on the page */
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: medium;
+      }
+
+      /* hover affect on the page */
+
+      a:hover {
+        color: white;
+        background-color: red;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      /* adding a border and aligning the margin */
+
+      #contactform {
+        text-align: center;
+        margin-top: 200px;
+        border: solid white;
+        padding: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapitems container-fluid">
+      <!-- adding a header with div blocks and using bootstrap grid contains header and alist -->
+
+      <div class="row">
+        <div class="col">
+          <header>
+            <div class="logo">ROXY</div>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <!--Creating a contact form using bootstrap to style it -->
+
+      <div class="row">
+        <div class="col-4"></div>
+        <div id="contactform" class="col-4">
+          <h4>Please contact us for more queries</h4>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out or Email us</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="mailto:roxy@fitwear.com"> Email Us </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

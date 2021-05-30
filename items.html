@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Items</title>
+
+    <!---Using Icons-->
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <!--Bootstrap-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!--Nova Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap"
+    />
+
+    <script src="https://kit.fontawesome.com/a9365d9272.js"></script>
+
+    <link rel="stylesheet" href="catalogue.css" />
+  </head>
+
+  <body>
+    <div class="wrapitems">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <header>
+              <div class="logo">ROXY</div>
+              <div class="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Items</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li class="cart">
+                    <a href="cart.html">
+                      <ion-icon name="cart-outline"></ion-icon><span>0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </div>
+
+        <!--Using the bootstrap grid to alligning thumbnails into rows and collums and adjusting the size to make them responsive-->
+
+        <div class="row picrow1">
+          <div id="watchzoom" class="col-lg-4 col-md-6 col-sm-12">
+            <a id="watch" href="watch.html">
+              <img
+                src="images/watch.jpg"
+                class="img-thumbnail img-fluid"
+                alt="watch"
+              />
+              <p>Roxy smart watch - R3500</p>
+            </a>
+            <button class="add-cart" id="addcartwatch">ADD TO CART</button>
+          </div>
+          <div id="legzoom" class="col-lg-4 col-md-6 col-sm-12">
+            <a id="leggings" href="leggings.html">
+              <img
+                src="images/leggings.jpg"
+                class="img-thumbnail img-fluid"
+                alt="leggings"
+              />
+              <p>Roxy active gym leggings - R400</p>
+            </a>
+            <button class="add-cart" id="addcartleggings">ADD TO CART</button>
+          </div>
+          <div id="shortzoom" class="col-lg-4 col-md-6 col-sm-12">
+            <a id="shorts" href="shorts.html">
+              <img
+                src="images/shorts.jpg"
+                alt="shorts"
+                class="img-thumbnail img-fluid"
+              />
+
+              <p>Roxy high waist gym shorts - R300</p>
+            </a>
+            <button class="add-cart" id="addcartshorts">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="row picrow2">
+          <div id="tankzoom" class="col-lg-4 col-md-6 col-sm-12">
+            <a id="tanktop" href="tanktop.html">
+              <img
+                src="images/tanktop.jpg"
+                alt="tanktop"
+                class="img-thumbnail img-fluid"
+              />
+              <p>Roxy tanktop - R250</p>
+            </a>
+            <button class="add-cart" id="addcarttop">ADD TO CART</button>
+          </div>
+          <div id="shoezoom" class="col-lg-4 col-md-6 col-sm-12">
+            <a id="shoes" href="shoes.html">
+              <img
+                src="images/shoes.jpg"
+                alt="shoes"
+                class="img-thumbnail img-fluid"
+              />
+              <p>Roxy sport shoes - R2500</p>
+            </a>
+            <button class="add-cart" id="addcartshoes">ADD TO CART</button>
+          </div>
+          <div id="yogazoom" class="col-lg-4 col-md-6 col-sm-12">
+            <a id="yogamat" href="yogamat.html">
+              <img
+                src="images/yogamat.jpg"
+                class="img-thumbnail img-fluid"
+                alt="watch"
+              />
+              <p>Roxy yogamat - R500</p>
+            </a>
+            <button class="add-cart" id="addcartyoga">ADD TO CART</button>
+          </div>
+        </div>
+        <!--Creating a horizontal table creating lists with one table row-->
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./catalogue.js"></script>
+  </body>
+</html>

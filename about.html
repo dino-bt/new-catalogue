@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leggings</title>
+    <!--Bootstrap-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Jquery-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Nova Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap"
+    />
+
+    <script src="https://kit.fontawesome.com/a9365d9272.js"></script>
+
+    <link rel="stylesheet" href="catalogue.css" />
+    <style>
+      /*Changing the font size and aligning the center */
+      p {
+        font-size: large;
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+        margin-top: 30px;
+      }
+      /* adding a border and aligning the margin */
+
+      #roxy {
+        text-align: center;
+        margin-top: 200px;
+        border: solid white;
+        padding: 30px;
+      }
+
+      p {
+        font-family: "Nova Round", cursive;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapitems container-fluid">
+      <!-- adding a header with div blocks and using bootstrap grid contains header and alist -->
+
+      <div class="row">
+        <div class="col">
+          <header>
+            <div class="logo">ROXY</div>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+
+        <!--putting the content in the second div colum which in the same row  -->
+
+        <div id="roxy" class="col-6">
+          <section>
+            <h4 class="about">WHAT ROXY IS ABOUT</h4>
+            <p>
+              Roxy is a newborn project starting in June 2016. Aiming on
+              bringing the best sport clothes and equipment to our customers.
+              Our focus is mainly on female’s. We are mainly an online business
+              meaning we do not have any shops. We have our own manufacturing
+              branch where we create all the gear and then we can ship it to
+              wherever we please around the world. Roxy is dedicated to making
+              our customers experience the best and we work hard to put
+              attention to detail in every product we produce. We are a growing
+              family of enthusiasts Have a look around at our items and please
+              feel free to contact us if you have any further questions.
+            </p>
+          </section>
+          <section>
+            <h4>Testimonials</h4>
+            <p>
+              Christine Luca- Roxy has the best material ever would highly
+              reccomend.
+              <br />
+              Jess Hagen- I have been using Roxy for quite some time now and the
+              always deliver.
+              <br />
+              Sarena Williams- My number one stop for gym gear
+            </p>
+          </section>
+          <section>
+            <h4>Raising Awarenes Program</h4>
+            <p>
+              Roxy started a new awareness program 2 years ago with the
+              intention of raising awarenes of hunger in South Africa and
+              Africa. Every month Roxy donates food and clothing to unpriveledge
+              families all around the African continent. We are thrilled that we
+              can give back please send us an email to find out more how you too
+              can make a change!.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./jquery_catalogue.js"></script>
+  </body>
+</html>
